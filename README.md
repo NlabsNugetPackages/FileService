@@ -11,7 +11,22 @@ dotnet add package Nlabs.FileService
 ## Usage
 If you want to save file in server
 ```Csharp
+
+IoC Configuration and Usage of FileService
+This WebAPI project manages static files (wwwroot directory) using the Nlabs.FileService package. To utilize this package, you need to perform dependency injection (DI) and provide the necessary configuration.
+
+Step 1: Adding Dependencies to IoC Container
+In your Program.cs file, use the AddFileService method to configure the IFileHostEnvironment interface. This method ensures that the necessary dependencies are registered correctly in the IoC container:
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddFileService(builder.Environment.WebRootPath);
+
+
+
 string filePath = "./Files/";
+
 
 string fileName = FileService.FileSaveToServer(file,filePath);
 ```
@@ -30,7 +45,15 @@ byte[] fileByeArray = FileService.FileConvertByteArrayToDatabase(file);
 
 If you want to delete file in server
 ```Csharp
-string path = "./Files/" + "FileName";
+//string path = "./Files/" + "FileName";
+
+If you want to use the package using layered architecture
+Example Handler Code:
+internal sealed class MyCommandHandler(IFileHostEnvironment fileHostEnvironment) : IRequestHandler
+bla bla bla
+this handle code
+
+var fullPath = Path.Combine(fileHostEnvironment.WebRootPath, "Files", file.jpeg);
 
 FileService.FileDeleteToServer(path);
 ```

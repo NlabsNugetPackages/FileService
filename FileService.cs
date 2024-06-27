@@ -10,7 +10,7 @@ public static class FileService
         fileFormat = fileFormat.ToLower();
         var fileName = Guid.NewGuid().ToString() + fileFormat;
         var path = filePath + fileName;
-        using (var stream = System.IO.File.Create(path))
+        using (var stream = File.Create(path))
         {
             file.CopyTo(stream);
         }
@@ -23,8 +23,7 @@ public static class FileService
         fileFormat = fileFormat.ToLower();
         var fileName = Guid.NewGuid().ToString() + fileFormat;
 
-        FtpWebRequest request = (FtpWebRequest)WebRequest.Create(
-            $"{fileSaveToFtpModel.FtpAddress}{fileName}");
+        var request = (FtpWebRequest)WebRequest.Create($"{fileSaveToFtpModel.FtpAddress}{fileName}");
         request.Credentials = new NetworkCredential(
             fileSaveToFtpModel.UserName,
             fileSaveToFtpModel.Password);
@@ -53,9 +52,9 @@ public static class FileService
     {
         try
         {
-            if (System.IO.File.Exists(path))
+            if (File.Exists(path))
             {
-                System.IO.File.Delete(path);
+                File.Delete(path);
             }
         }
         catch (Exception)
@@ -67,8 +66,7 @@ public static class FileService
     {
         try
         {
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(
-                $"{fileSaveToFtpModel}{path}");
+            var request = (FtpWebRequest)WebRequest.Create($"{fileSaveToFtpModel}{path}");
             request.Credentials = new NetworkCredential(
                 fileSaveToFtpModel.UserName,
                 fileSaveToFtpModel.Password);

@@ -11,13 +11,21 @@
     <RepositoryUrl>https://github.com/NlabsNugetPackages/FileService</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>FileService</PackageTags>
+    <Version>8.0.5</Version>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="logo.jpeg">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
