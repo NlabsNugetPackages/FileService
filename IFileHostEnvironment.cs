@@ -1,4 +1,4 @@
-﻿namespace Nlabs.FileSrevice;
+﻿namespace Nlabs.FileService;
 public interface IFileHostEnvironment
 {
     string WebRootPath { get; set; }

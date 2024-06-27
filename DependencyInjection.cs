@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Nlabs.FileSrevice;
+namespace Nlabs.FileService;
 public static class DependencyInjection
 {
     public static IServiceCollection AddFileService

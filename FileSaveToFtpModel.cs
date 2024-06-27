@@ -1,4 +1,4 @@
-﻿namespace Nlabs.GenericFileSrevice;
+﻿namespace Nlabs.FileService;
 public class FileSaveToFtpModel
 {
     public FileSaveToFtpModel(string ftpAddress, string userName, string password)

@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/NlabsNugetPackages/FileService</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>FileService</PackageTags>
-    <Version>8.0.5</Version>
+    <Version>8.0.7</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 

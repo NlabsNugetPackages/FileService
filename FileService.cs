@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Net;
 
-namespace Nlabs.GenericFileSrevice;
+namespace Nlabs.FileService;
 public static class FileService
 {
     public static string FileSaveToServer(IFormFile file, string filePath)

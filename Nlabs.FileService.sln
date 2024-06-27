@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nlabs.FileSrevice", "Nlabs.FileSrevice.csproj", "{525C3F0D-3B08-49C7-A464-013DDC664D61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nlabs.FileService", "Nlabs.FileService.csproj", "{01B334DE-EB97-487B-950D-FE0895F56CAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{525C3F0D-3B08-49C7-A464-013DDC664D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{525C3F0D-3B08-49C7-A464-013DDC664D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{525C3F0D-3B08-49C7-A464-013DDC664D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{525C3F0D-3B08-49C7-A464-013DDC664D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B334DE-EB97-487B-950D-FE0895F56CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B334DE-EB97-487B-950D-FE0895F56CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B334DE-EB97-487B-950D-FE0895F56CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B334DE-EB97-487B-950D-FE0895F56CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

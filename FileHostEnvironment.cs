@@ -1,4 +1,4 @@
-﻿namespace Nlabs.FileSrevice;
+﻿namespace Nlabs.FileService;
 
 internal sealed class FileHostEnvironment : IFileHostEnvironment
 {
